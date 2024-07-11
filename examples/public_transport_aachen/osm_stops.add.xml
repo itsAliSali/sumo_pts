@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-07-10 20:34:20 by Eclipse SUMO netconvert Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="${SUMO_HOME}/data/typemap/osmNetconvert.typ.xml,${SUMO_HOME}/data/typemap/osmNetconvertAerialway.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml.gz"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <edge_removal>
+        <keep-edges.by-vclass value="passenger,bus,tram,rail_urban,subway,cable_car,rail"/>
+    </edge_removal>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+    </railway>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="-11963492766" name="Uniklinik" lane="-1290341413_0" startPos="53.46" endPos="68.46" friendlyPos="true" lines="4 45 43 SB 71 5 3"/>
+    <busStop id="-246844776" name="Lombardenstraße" lane="-766771186_0" startPos="16.98" endPos="31.98" friendlyPos="true" lines="34 N 3"/>
+    <busStop id="-271458043" name="Aachen Hauptbahnhof" lane="-46835310#2_0" startPos="24.79" endPos="39.79" friendlyPos="true" lines="74 44 N 60"/>
+    <busStop id="-282989999" name="Aachen Bushof" lane="-414512201_0" startPos="6.39" endPos="21.39" friendlyPos="true" lines="X 47 17"/>
+    <busStop id="-301623196" name="Normaluhr" lane="-411582351_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="21 N 5"/>
+    <busStop id="-302865347" name="Aachen Bushof" lane="-318312583#1_0" startPos="91.94" endPos="106.94" friendlyPos="true" lines="53 N 5"/>
+    <busStop id="-3247096695" name="Hansemannplatz" lane="-378655061#3_0" startPos="13.21" endPos="28.21" friendlyPos="true" lines="21 1 46 SB 71 N 6 11 SB 20 16 220 31 41 52">
+        <access lane="378655061#0_0" pos="18.34" length="16.80" friendlyPos="1"/>
+        <access lane="478472522_0" pos="5.02" length="42.62" friendlyPos="1"/>
+        <access lane="5047996#0_0" pos="26.68" length="22.99" friendlyPos="1"/>
+        <access lane="65157090#0_0" pos="0.00" length="53.33" friendlyPos="1"/>
+        <access lane="8007345_0" pos="0.00" length="57.91" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-338836635" name="Normaluhr" lane="-210670649_0" startPos="2.00" endPos="17.00" friendlyPos="true" lines="27 7 33 37"/>
+    <busStop id="-339245833" name="Aachen Bushof" lane="-318312583#1_0" startPos="34.50" endPos="49.50" friendlyPos="true" lines="75 N 4 N 7"/>
+    <busStop id="-3420003207" name="Franziskushospital" lane="-280911454#7_0" startPos="57.30" endPos="72.30" friendlyPos="true" lines="24"/>
+    <busStop id="-3421483026" name="Weststraße" lane="-75097127#6_0" startPos="92.01" endPos="107.01" friendlyPos="true" lines="4"/>
+    <busStop id="-3424083259" name="Campus Melaten (Physikzentrum)" lane="-76561469_0" startPos="329.18" endPos="344.18" friendlyPos="true" lines="22 12 23"/>
+    <busStop id="-3447322824" name="Elsa-Brändström-Straße" lane="-413745908#12_0" startPos="379.17" endPos="394.17" friendlyPos="true" lines="54"/>
+    <busStop id="-3799313090" name="Kaiserplatz" lane="-378035666_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="X 25 73 47 X 73"/>
+    <busStop id="-819017929" name="Blücherplatz" lane="-413741175_0" startPos="18.02" endPos="33.02" friendlyPos="true" lines="21 1 46 SB 71 N 6 11 SB 20 16 220 31 41 52">
+        <access lane="-478516445_0" pos="0.00" length="41.72" friendlyPos="1"/>
+        <access lane="30732136#0_0" pos="109.27" length="39.28" friendlyPos="1"/>
+        <access lane="478516448#0_0" pos="28.19" length="21.41" friendlyPos="1"/>
+        <access lane="610577376_0" pos="1.87" length="31.88" friendlyPos="1"/>
+        <access lane="65411736_0" pos="10.05" length="12.00" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1038181479" name="Kastanienweg" lane="473854203_0" startPos="11.69" endPos="26.69" friendlyPos="true" lines="75"/>
+    <busStop id="1141026149" name="Reumontstraße" lane="995402842_0" startPos="22.62" endPos="37.62" friendlyPos="true"/>
+    <busStop id="11503354532" name="Mies-van-der-Rohe-Straße" lane="75221791#0_0" startPos="33.40" endPos="48.40" friendlyPos="true"/>
+    <busStop id="11503354533" name="Mies-van-der-Rohe-Straße" lane="939477015#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="11503354535" name="Mies-van-der-Rohe-Straße" lane="75221791#0_0" startPos="30.68" endPos="45.68" friendlyPos="true"/>
+    <busStop id="11963492727" name="Uniklinik" lane="1291927074_0" startPos="52.01" endPos="67.01" friendlyPos="true" lines="1 41 30 80 N 4 70 33 X 73 3 73"/>
+    <busStop id="11963492764" name="Uniklinik" lane="1290341414_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="11963492765" name="Uniklinik" lane="1290341414_0" startPos="50.53" endPos="65.53" friendlyPos="true"/>
+    <busStop id="1245248638" name="Halifaxstraße" lane="106240334#0_0" startPos="20.86" endPos="35.86" friendlyPos="true"/>
+    <busStop id="130153728" name="Normaluhr" lane="5028391#0_0" startPos="5.77" endPos="20.77" friendlyPos="true"/>
+    <busStop id="130207092" name="Westfriedhof" lane="911221406#0_0" startPos="90.19" endPos="105.19" friendlyPos="true"/>
+    <busStop id="130250321" name="Technische Hochschule" lane="995917616#0_0" startPos="148.47" endPos="163.47" friendlyPos="true"/>
+    <busStop id="1375590294" name="Muffet" lane="123313358#3_0" startPos="25.05" endPos="40.05" friendlyPos="true"/>
+    <busStop id="137984596" name="Jupp-Müller-Straße" lane="171858447#0_0" startPos="42.01" endPos="57.01" friendlyPos="true"/>
+    <busStop id="149268682" name="Kaiserplatz" lane="32706416#0_0" startPos="49.39" endPos="64.39" friendlyPos="true" lines="22 12 25 65 35 X 35 2 23 55 N 8 66 15 5 45 SB 66"/>
+    <busStop id="1498496905" name="Alter Posthof" lane="411094912#0_0" startPos="75.53" endPos="90.53" friendlyPos="true"/>
+    <busStop id="1544179726" name="Karlsgraben" lane="412138231_0" startPos="42.26" endPos="57.26" friendlyPos="true"/>
+    <busStop id="1544570666" name="Königstraße" lane="412910063_0" startPos="9.80" endPos="24.80" friendlyPos="true"/>
+    <busStop id="155204468" name="Aachen Bushof" lane="699087327_0" startPos="10.37" endPos="25.37" friendlyPos="true" lines="X 25"/>
+    <busStop id="1694426224" name="Rabentalweg (Mensa Vita)" lane="902140319_0" startPos="0.00" endPos="15.00" friendlyPos="true">
+        <access lane="-255038402_0" pos="0.00" length="107.98" friendlyPos="1"/>
+        <access lane="-902140318_0" pos="109.94" length="9.74" friendlyPos="1"/>
+        <access lane="255038402_0" pos="72.53" length="107.64" friendlyPos="1"/>
+        <access lane="902140318_0" pos="0.00" length="10.84" friendlyPos="1"/>
+        <access lane="902140320_0" pos="72.06" length="6.04" friendlyPos="1"/>
+    </busStop>
+    <busStop id="194410150" name="Turmstraße" lane="30641668#0_0" startPos="17.25" endPos="32.25" friendlyPos="true"/>
+    <busStop id="1949015030" name="Hainbuchenstraße" lane="147260598#4_0" startPos="124.07" endPos="139.07" friendlyPos="true"/>
+    <busStop id="196170093" name="Burtscheid Hauptstraße" lane="608729165#0_0" startPos="60.54" endPos="75.54" friendlyPos="true"/>
+    <busStop id="2019502725" name="Audimax" lane="27653255#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="205455272" name="Halifaxstraße" lane="996338801#0_0" startPos="27.89" endPos="42.89" friendlyPos="true"/>
+    <busStop id="2065298285" name="Audimax" lane="1194935198_0" startPos="3.38" endPos="18.38" friendlyPos="true"/>
+    <busStop id="2091638645" name="Worringerweg" lane="94558034#0_0" startPos="94.29" endPos="109.29" friendlyPos="true"/>
+    <busStop id="218171052" name="Willy-Brandt-Platz" lane="5028402_0" startPos="54.25" endPos="69.25" friendlyPos="true"/>
+    <busStop id="218171061" name="Willy-Brandt-Platz" lane="844315022_0" startPos="18.71" endPos="33.71" friendlyPos="true"/>
+    <busStop id="2398070056" name="Schanz" lane="4992149#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="2403623648" name="Kaiserplatz" lane="11187464_0" startPos="12.06" endPos="27.06" friendlyPos="true"/>
+    <busStop id="246847291" name="Bastei" lane="24655690#0_0" startPos="47.02" endPos="62.02" friendlyPos="true"/>
+    <busStop id="2506134976" name="Worringerweg" lane="94558034#0_0" startPos="112.66" endPos="127.66" friendlyPos="true"/>
+    <busStop id="259571767" name="Kapitelstraße" lane="412150089_0" startPos="18.33" endPos="33.33" friendlyPos="true"/>
+    <busStop id="259571768" name="Normaluhr" lane="237190957#0_0" startPos="7.58" endPos="22.58" friendlyPos="true"/>
+    <busStop id="267673716" name="Annastraße" lane="422024563#0_0" startPos="17.89" endPos="32.89" friendlyPos="true"/>
+    <busStop id="2690548494" name="Normaluhr" lane="10300180#0_0" startPos="4.66" endPos="19.66" friendlyPos="true"/>
+    <busStop id="271458043" name="Aachen Hauptbahnhof" lane="460211531_0" startPos="1.07" endPos="16.07" friendlyPos="true" lines="X 3"/>
+    <busStop id="271458085" name="Aachen Hauptbahnhof" lane="460211531_0" startPos="16.83" endPos="31.83" friendlyPos="true"/>
+    <busStop id="27285580" name="Venskyhäuschen" lane="23978799#0_0" startPos="37.53" endPos="52.53" friendlyPos="true">
+        <access lane="18858275_0" pos="34.86" length="74.94" friendlyPos="1"/>
+        <access lane="23978805_0" pos="0.00" length="27.60" friendlyPos="1"/>
+        <access lane="429296303#0_0" pos="0.00" length="46.35" friendlyPos="1"/>
+        <access lane="429296304_0" pos="0.53" length="36.78" friendlyPos="1"/>
+        <access lane="53208885_0" pos="6.15" length="52.45" friendlyPos="1"/>
+    </busStop>
+    <busStop id="27290925" name="Süsterfeld" lane="128882184#4_0" startPos="330.40" endPos="345.40" friendlyPos="true"/>
+    <busStop id="27290928" name="Europadorf" lane="128882184#1_0" startPos="53.42" endPos="68.42" friendlyPos="true"/>
+    <busStop id="288047586" name="Theater" lane="420803114#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="291502284" name="Mies-van-der-Rohe-Straße" lane="27865722#0_0" startPos="10.74" endPos="25.74" friendlyPos="true"/>
+    <busStop id="291502285" name="Ponttor" lane="32702148_0" startPos="7.39" endPos="22.39" friendlyPos="true" lines="13"/>
+    <busStop id="2955139737" name="Misereor" lane="263430073#0_0" startPos="18.37" endPos="33.37" friendlyPos="true"/>
+    <busStop id="2955139738" name="Misereor" lane="411476230_0" startPos="11.41" endPos="26.41" friendlyPos="true"/>
+    <busStop id="297979254" name="Am Hügel" lane="5130513#3_0" startPos="15.24" endPos="30.24" friendlyPos="true"/>
+    <busStop id="302854409" name="Aachen Bushof" lane="43204026_0" startPos="95.32" endPos="110.32" friendlyPos="true" lines="14 24"/>
+    <busStop id="302854411" name="Aachen Bushof" lane="43204026_0" startPos="30.54" endPos="45.54" friendlyPos="true"/>
+    <busStop id="302854412" name="Aachen Bushof" lane="43204029_0" startPos="90.67" endPos="105.67" friendlyPos="true" lines="36"/>
+    <busStop id="302854413" name="Aachen Bushof" lane="43204029_0" startPos="58.75" endPos="73.75" friendlyPos="true" lines="SB 63 66 SB 66 SB 20 220"/>
+    <busStop id="302854414" name="Aachen Bushof" lane="43204029_0" startPos="24.83" endPos="39.83" friendlyPos="true"/>
+    <busStop id="302854415" name="Aachen Bushof" lane="27581785_0" startPos="89.73" endPos="104.73" friendlyPos="true"/>
+    <busStop id="302865354" name="Aachen Bushof" lane="27653250_0" startPos="93.84" endPos="108.84" friendlyPos="true" lines="1 52 51"/>
+    <busStop id="303716732" name="Jakobsplatz" lane="4444696#0_0" startPos="37.70" endPos="52.70" friendlyPos="true"/>
+    <busStop id="303716733" name="Schanz" lane="369480722#0_0" startPos="20.15" endPos="35.15" friendlyPos="true"/>
+    <busStop id="317991786" name="Minoritenstraße" lane="8027254#3_0" startPos="51.11" endPos="66.11" friendlyPos="true"/>
+    <busStop id="321294121" name="Westbahnhof" lane="412142122#2_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="321307200" name="Misereor" lane="411579683#0_0" startPos="0.77" endPos="15.77" friendlyPos="true"/>
+    <busStop id="321312883" name="Lochnerstraße" lane="31762921_0" startPos="32.42" endPos="47.42" friendlyPos="true"/>
+    <busStop id="321336375" name="Ponttor (Malteserstraße)" lane="1199234579_0" startPos="2.48" endPos="17.48" friendlyPos="true" lines="13"/>
+    <busStop id="3220117197" name="Luisenhospital" lane="420300229#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="3220117198" name="Schanz" lane="4992149#0_0" startPos="12.00" endPos="27.00" friendlyPos="true" lines="350"/>
+    <busStop id="3220117199" name="Schanz" lane="46154135#0_0" startPos="120.99" endPos="135.99" friendlyPos="true"/>
+    <busStop id="3220229535" name="Driescher Gässchen" lane="27327968#0_0" startPos="10.28" endPos="25.28" friendlyPos="true"/>
+    <busStop id="3227923636" name="Driescher Gässchen" lane="442426221#0_0" startPos="19.14" endPos="34.14" friendlyPos="true"/>
+    <busStop id="3247096696" name="Hansemannplatz" lane="378655055#0_0" startPos="21.27" endPos="36.27" friendlyPos="true"/>
+    <busStop id="32872637" name="Ungarnplatz (Carolus Thermen)" lane="956456013_0" startPos="31.16" endPos="46.16" friendlyPos="true"/>
+    <busStop id="33790076" name="Kármán-Auditorium" lane="5046739#0_0" startPos="60.75" endPos="75.75" friendlyPos="true"/>
+    <busStop id="338836634" name="Normaluhr" lane="5038939#0_0" startPos="42.04" endPos="57.04" friendlyPos="true"/>
+    <busStop id="339466246" name="Franziskushospital" lane="1084072386#2_0" startPos="189.99" endPos="204.99" friendlyPos="true"/>
+    <busStop id="3411721124" name="Carolus Thermen" lane="1178357054#1_0" startPos="249.68" endPos="264.68" friendlyPos="true"/>
+    <busStop id="3411818329" name="Rolandstraße" lane="261740058#1_0" startPos="66.37" endPos="81.37" friendlyPos="true" lines="51"/>
+    <busStop id="3411818330" name="Rolandstraße" lane="261740058#1_0" startPos="1.88" endPos="16.88" friendlyPos="true"/>
+    <busStop id="3411818331" name="STAWAG" lane="1192366819#0_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="X 51"/>
+    <busStop id="3411818332" name="STAWAG" lane="412155350_0" startPos="7.62" endPos="22.62" friendlyPos="true"/>
+    <busStop id="3415950576" name="Minoritenstraße" lane="8027254#3_0" startPos="26.28" endPos="41.28" friendlyPos="true"/>
+    <busStop id="3416765152" name="Theater" lane="306802827#0_0" startPos="23.64" endPos="38.64" friendlyPos="true"/>
+    <busStop id="3417116889" name="Wallstraße" lane="411094913#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="3417385547" name="Kapitelstraße" lane="412150089_0" startPos="5.50" endPos="20.50" friendlyPos="true"/>
+    <busStop id="3417446390" name="Burtscheid Hauptstraße" lane="608729165#0_0" startPos="66.78" endPos="81.78" friendlyPos="true" lines="14 34 54"/>
+    <busStop id="3417631293" name="Europadorf" lane="128882184#4_0" startPos="49.19" endPos="64.19" friendlyPos="true" lines="43 74"/>
+    <busStop id="3417631295" name="Süsterfeld" lane="128882184#4_0" startPos="418.32" endPos="433.32" friendlyPos="true"/>
+    <busStop id="3419376001" name="Jakobsplatz" lane="4444696#0_0" startPos="32.01" endPos="47.01" friendlyPos="true"/>
+    <busStop id="3419406994" name="Westbahnhof" lane="415624684#0_0" startPos="16.17" endPos="31.17" friendlyPos="true"/>
+    <busStop id="3419836205" name="Westbahnhof" lane="412142122#0_0" startPos="12.81" endPos="27.81" friendlyPos="true"/>
+    <busStop id="3420003208" name="Jüdischer Friedhof" lane="-1084072386#1_0" startPos="28.59" endPos="43.59" friendlyPos="true"/>
+    <busStop id="3420478982" name="Am Backes" lane="531703033#9_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="3420478983" name="Am Backes" lane="531703033#7_0" startPos="30.98" endPos="45.98" friendlyPos="true"/>
+    <busStop id="3420478990" name="Judengasse/Markt" lane="5924063#0_0" startPos="90.58" endPos="105.58" friendlyPos="true"/>
+    <busStop id="3420478991" name="Kármán-Auditorium" lane="5046739#0_0" startPos="36.54" endPos="51.54" friendlyPos="true"/>
+    <busStop id="3420478992" name="Paulusstraße" lane="80503958#4_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="3420553793" name="Kronenberg" lane="531703033#10_0" startPos="217.32" endPos="232.32" friendlyPos="true"/>
+    <busStop id="3420553794" name="Kronenberg" lane="531703033#12_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="3420553795" name="Hanbruch Schwimmhalle West (Ulla-Klinger-Halle)" lane="38533364#0_0" startPos="40.39" endPos="55.39" friendlyPos="true"/>
+    <busStop id="3420553796" name="Hanbruch Schwimmhalle West (Ulla-Klinger-Halle)" lane="38533364#0_0" startPos="33.35" endPos="48.35" friendlyPos="true"/>
+    <busStop id="3421143711" name="Westfriedhof" lane="33523613#0_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="35 55 25 30"/>
+    <busStop id="3421191594" name="Venskyhäuschen" lane="23978799#0_0" startPos="0.00" endPos="15.00" friendlyPos="true">
+        <access lane="-12076924#1_0" pos="48.59" length="90.33" friendlyPos="1"/>
+        <access lane="-38533364#2_0" pos="0.00" length="48.88" friendlyPos="1"/>
+        <access lane="23978805_0" pos="0.00" length="83.39" friendlyPos="1"/>
+        <access lane="38533364#1_0" pos="25.89" length="46.76" friendlyPos="1"/>
+        <access lane="429296304_0" pos="0.53" length="90.81" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3421408217" name="Kuckelkorn" lane="1012604827#0_0" startPos="9.06" endPos="24.06" friendlyPos="true"/>
+    <busStop id="3421408218" name="Kuckelkorn" lane="733739481#0_0" startPos="21.54" endPos="36.54" friendlyPos="true"/>
+    <busStop id="3421483025" name="Welkenrather Straße" lane="75097124#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="3421826598" name="Kastanienweg" lane="1199237029_0" startPos="29.21" endPos="44.21" friendlyPos="true"/>
+    <busStop id="3421826601" name="Luisenhospital" lane="420300229#0_0" startPos="12.93" endPos="27.93" friendlyPos="true"/>
+    <busStop id="3421826602" name="Misereor" lane="29211151#0_0" startPos="17.85" endPos="32.85" friendlyPos="true"/>
+    <busStop id="3422228305" name="Augustastraße" lane="262279474#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="3422228308" name="Gartenstraße" lane="261736473#0_0" startPos="4.91" endPos="19.91" friendlyPos="true"/>
+    <busStop id="3422228309" name="Gartenstraße" lane="429299863#0_0" startPos="7.02" endPos="22.02" friendlyPos="true"/>
+    <busStop id="3422321653" name="Seffenter Weg" lane="75221790#1_0" startPos="98.04" endPos="113.04" friendlyPos="true"/>
+    <busStop id="3422321654" name="Seffenter Weg" lane="75221790#1_0" startPos="99.91" endPos="114.91" friendlyPos="true"/>
+    <busStop id="3424034247" name="Mies-van-der-Rohe-Straße" lane="27865722#0_0" startPos="21.01" endPos="36.01" friendlyPos="true"/>
+    <busStop id="3424034250" name="Otto-Blumenthal-Straße" lane="108673908#1_0" startPos="285.11" endPos="300.11" friendlyPos="true"/>
+    <busStop id="3424034252" name="Wendlingweg" lane="123127193#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="3426417154" name="Am Hügel" lane="5130513#2_0" startPos="291.08" endPos="306.08" friendlyPos="true"/>
+    <busStop id="3426417155" name="Am Weißenberg" lane="5130513#2_0" startPos="1.04" endPos="16.04" friendlyPos="true"/>
+    <busStop id="3426417156" name="Am Weißenberg" lane="5130513#0_0" startPos="4.06" endPos="19.06" friendlyPos="true"/>
+    <busStop id="3426654256" name="Turmstraße" lane="30641668#0_0" startPos="8.26" endPos="23.26" friendlyPos="true"/>
+    <busStop id="3426897071" name="Königstraße" lane="124177232#0_0" startPos="14.64" endPos="29.64" friendlyPos="true"/>
+    <busStop id="3426897073" name="Königstraße" lane="5122705#0_0" startPos="15.35" endPos="30.35" friendlyPos="true"/>
+    <busStop id="343706164" name="Ehrenmal/Lousberg" lane="361376447#0_0" startPos="230.94" endPos="245.94" friendlyPos="true"/>
+    <busStop id="343706165" name="Ponttor (Pontwall)" lane="31963583_0" startPos="30.72" endPos="45.72" friendlyPos="true"/>
+    <busStop id="343706166" name="Ponttor (Malteserstraße)" lane="29211621_0" startPos="36.69" endPos="51.69" friendlyPos="true" lines="44"/>
+    <busStop id="3446758001" name="Alter Posthof" lane="206293099#0_0" startPos="19.17" endPos="34.17" friendlyPos="true"/>
+    <busStop id="3446758003" name="Annastraße" lane="422024563#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="3446996474" name="Rosenquelle" lane="422258231#0_0" startPos="16.76" endPos="31.76" friendlyPos="true"/>
+    <busStop id="3446996475" name="Schanz" lane="8038403#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="3446996476" name="Schanz" lane="1206566096_0" startPos="9.51" endPos="24.51" friendlyPos="true"/>
+    <busStop id="3447322825" name="Elsa-Brändström-Straße" lane="4965740#0_0" startPos="68.99" endPos="83.99" friendlyPos="true"/>
+    <busStop id="3448497207" name="Lombardenstraße" lane="4965865#0_0" startPos="47.91" endPos="62.91" friendlyPos="true"/>
+    <busStop id="3448497215" name="Ungarnplatz (Carolus Thermen)" lane="956456013_0" startPos="22.02" endPos="37.02" friendlyPos="true"/>
+    <busStop id="3460302852" name="Gillesbachtal" lane="411596082_0" startPos="33.19" endPos="48.19" friendlyPos="true"/>
+    <busStop id="3460302853" name="Gillesbachtal" lane="422258233#1_0" startPos="27.87" endPos="42.87" friendlyPos="true" lines="21 31 SB 63 51 36 11"/>
+    <busStop id="3470766585" name="Aachen Bushof" lane="43204026_0" startPos="65.35" endPos="80.35" friendlyPos="true" lines="46 16 350"/>
+    <busStop id="3481359061" name="Melatener Straße" lane="28211729#0_0" startPos="2.41" endPos="17.41" friendlyPos="true"/>
+    <busStop id="3481359062" name="Melatener Straße" lane="704910752#0_0" startPos="43.00" endPos="58.00" friendlyPos="true"/>
+    <busStop id="3481600395" name="Seffenter Weg" lane="19752354#5_0" startPos="229.76" endPos="244.76" friendlyPos="true"/>
+    <busStop id="3481855492" name="Hainbuchenstraße" lane="939477015#0_0" startPos="244.85" endPos="259.85" friendlyPos="true"/>
+    <busStop id="352885293" name="Carolus Thermen" lane="1178357054#1_0" startPos="236.69" endPos="251.69" friendlyPos="true"/>
+    <busStop id="355238294" name="Turmstraße" lane="4444689#0_0" startPos="23.86" endPos="38.86" friendlyPos="true"/>
+    <busStop id="355238296" name="Turmstraße" lane="222568382#0_0" startPos="3.92" endPos="18.92" friendlyPos="true"/>
+    <busStop id="355238297" name="Lochnerstraße" lane="425558110_0" startPos="8.77" endPos="23.77" friendlyPos="true"/>
+    <busStop id="3554590020" name="Barbarossaplatz" lane="411760472#8_0" startPos="19.86" endPos="34.86" friendlyPos="true"/>
+    <busStop id="3554590027" name="Reumontstraße" lane="231411781#0_0" startPos="13.23" endPos="28.23" friendlyPos="true" lines="2 53"/>
+    <busStop id="35590955" name="Judengasse/Markt" lane="123240445_0" startPos="1.04" endPos="16.04" friendlyPos="true"/>
+    <busStop id="364777909" name="Hansemannplatz" lane="28407121#0_0" startPos="13.36" endPos="28.36" friendlyPos="true"/>
+    <busStop id="365204817" name="Eurogress" lane="976283243_0" startPos="69.80" endPos="84.80" friendlyPos="true"/>
+    <busStop id="365204820" name="Eurogress" lane="25600876#0_0" startPos="166.21" endPos="181.21" friendlyPos="true"/>
+    <busStop id="367971807" name="Ehrenmal/Lousberg" lane="259023092#0_0" startPos="211.25" endPos="226.25" friendlyPos="true"/>
+    <busStop id="369520172" name="Hörnstieg" lane="1194742739#2_0" startPos="81.39" endPos="96.39" friendlyPos="true"/>
+    <busStop id="3806426882" name="Kaiserplatz" lane="377848435#0_0" startPos="17.84" endPos="32.84" friendlyPos="true"/>
+    <busStop id="4034985339" name="Aachen Hauptbahnhof" lane="411043309#0_0" startPos="5.66" endPos="20.66" friendlyPos="true"/>
+    <busStop id="4034985340" name="Aachen Hauptbahnhof" lane="411043309#0_0" startPos="11.23" endPos="26.23" friendlyPos="true"/>
+    <busStop id="412441098" name="Elisenbrunnen" lane="952341787#0_0" startPos="41.46" endPos="56.46" friendlyPos="true" lines="N 2 N 6"/>
+    <busStop id="412441099" name="Elisenbrunnen" lane="952341787#0_0" startPos="11.40" endPos="26.40" friendlyPos="true"/>
+    <busStop id="412441100" name="Elisenbrunnen" lane="952341787#0_0" startPos="79.00" endPos="94.00" friendlyPos="true"/>
+    <busStop id="412441101" name="Elisenbrunnen" lane="952341787#0_0" startPos="124.12" endPos="139.12" friendlyPos="true" lines="X 35 X 51 N 3 N 8 15 65 N 1 N 9"/>
+    <busStop id="412441102" name="Kaiserplatz" lane="377848436#0_0" startPos="5.03" endPos="20.03" friendlyPos="true"/>
+    <busStop id="4154126217" name="Hansemannplatz" lane="32706416#0_0" startPos="302.01" endPos="317.01" friendlyPos="true"/>
+    <busStop id="4156352132" name="Alter Posthof" lane="414498694#0_0" startPos="19.15" endPos="34.15" friendlyPos="true"/>
+    <busStop id="445342426" name="Paulusstraße" lane="80503958#4_0" startPos="1.82" endPos="16.82" friendlyPos="true"/>
+    <busStop id="500062968" name="Ponttor (Saarstraße)" lane="30641881#0_0" startPos="30.83" endPos="45.83" friendlyPos="true"/>
+    <busStop id="5119971185" name="Aachen Bushof" lane="27653250_0" startPos="30.37" endPos="45.37" friendlyPos="true"/>
+    <busStop id="5160991595" name="Am Neuenhof" lane="531703034_0" startPos="10.21" endPos="25.21" friendlyPos="true"/>
+    <busStop id="5160991598" name="Am Neuenhof" lane="261601150_0" startPos="6.18" endPos="21.18" friendlyPos="true" lines="N 7"/>
+    <busStop id="5167484804" name="Seffenter Weg" lane="19752354#5_0" startPos="169.57" endPos="184.57" friendlyPos="true"/>
+    <busStop id="5274979749" name="Floriansdorf" lane="97827085#0_0" startPos="38.40" endPos="53.40" friendlyPos="true"/>
+    <busStop id="5274979751" name="Maria-Lipp-Straße" lane="1100597236_0" startPos="592.66" endPos="607.66" friendlyPos="true"/>
+    <busStop id="5274979752" name="Rabentalweg (Mensa Vita)" lane="902140320_0" startPos="3.43" endPos="18.43" friendlyPos="true"/>
+    <busStop id="530082571" name="Bendplatz" lane="146079345#0_0" startPos="15.81" endPos="30.81" friendlyPos="true"/>
+    <busStop id="534992089" name="Jüdischer Friedhof" lane="-1084072386#1_0" startPos="63.80" endPos="78.80" friendlyPos="true"/>
+    <busStop id="5478693792" name="Westbahnhof" lane="27865722#0_0" startPos="307.63" endPos="322.63" friendlyPos="true"/>
+    <busStop id="5693107227" name="Wendlingweg" lane="123127193#0_0" startPos="4.08" endPos="19.08" friendlyPos="true"/>
+    <busStop id="5693107232" name="Forckenbeckstraße" lane="1100566221_0" startPos="88.63" endPos="103.63" friendlyPos="true"/>
+    <busStop id="5693107235" name="Campus Melaten (Physikzentrum)" lane="108673908#1_0" startPos="54.44" endPos="69.44" friendlyPos="true"/>
+    <busStop id="5693107240" name="Otto-Blumenthal-Straße" lane="108673908#1_0" startPos="301.49" endPos="316.49" friendlyPos="true"/>
+    <busStop id="60005318" name="Technische Hochschule" lane="995917616#0_0" startPos="131.36" endPos="146.36" friendlyPos="true"/>
+    <busStop id="60095800" name="Forckenbeckstraße" lane="1100566221_0" startPos="159.06" endPos="174.06" friendlyPos="true" lines="X 3 80 70"/>
+    <busStop id="60100680" name="Hörnstieg" lane="1194742739#2_0" startPos="124.92" endPos="139.92" friendlyPos="true"/>
+    <busStop id="60538055" name="Hörn Brücke" lane="939477004_0" startPos="31.51" endPos="46.51" friendlyPos="true"/>
+    <busStop id="60698555" name="Muffet" lane="46354251#0_0" startPos="151.20" endPos="166.20" friendlyPos="true"/>
+    <busStop id="60780555" name="Königstraße" lane="5122705#0_0" startPos="15.35" endPos="30.35" friendlyPos="true"/>
+    <busStop id="611253228" name="Hörn Brücke" lane="367723392_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="61273613" name="Floriansdorf" lane="97827084#0_0" startPos="88.87" endPos="103.87" friendlyPos="true"/>
+    <busStop id="6157567115" name="Aachen, Henricistraße" lane="682113696_0" startPos="15.10" endPos="30.10" friendlyPos="true" lines="328 128 833"/>
+    <busStop id="69658165" name="Wallstraße" lane="411094913#0_0" startPos="13.01" endPos="28.01" friendlyPos="true"/>
+    <busStop id="704694002" name="Wilfried-König-Straße" lane="1100597236_0" startPos="141.26" endPos="156.26" friendlyPos="true"/>
+    <busStop id="774072890" name="Driescher Gässchen" lane="1202822339#0_0" startPos="35.70" endPos="50.70" friendlyPos="true"/>
+    <busStop id="779903913" name="Augustastraße" lane="29503061#0_0" startPos="12.04" endPos="27.04" friendlyPos="true"/>
+    <busStop id="785422124" name="Hansemannplatz" lane="65157090#0_0" startPos="12.31" endPos="27.31" friendlyPos="true"/>
+    <busStop id="790324320" name="Karlsgraben" lane="5078963#0_0" startPos="17.39" endPos="32.39" friendlyPos="true"/>
+    <busStop id="790324321" name="Karlsgraben" lane="206124247#0_0" startPos="77.14" endPos="92.14" friendlyPos="true"/>
+    <busStop id="804154313" name="Kaiserplatz" lane="367221732_0" startPos="27.47" endPos="42.47" friendlyPos="true" lines="4"/>
+    <busStop id="84846895" name="Jupp-Müller-Straße" lane="171858446#0_0" startPos="54.29" endPos="69.29" friendlyPos="true" lines="47 N 2 37 17 27 7 X 47"/>
+    <busStop id="84846897" name="Bendplatz" lane="657946881#0_0" startPos="206.17" endPos="221.17" friendlyPos="true"/>
+    <busStop id="923950489" name="Halifaxstraße" lane="996338801#3_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="923950490" name="Halifaxstraße" lane="293334391#0_0" startPos="141.85" endPos="156.85" friendlyPos="true"/>
+    <busStop id="923997137" name="Karlsgraben" lane="412138231_0" startPos="30.56" endPos="45.56" friendlyPos="true"/>
+    <busStop id="925665424" name="Auf der Hörn" lane="108553549#4_0" startPos="52.12" endPos="67.12" friendlyPos="true"/>
+    <busStop id="925665425" name="Auf der Hörn" lane="108553549#0_0" startPos="155.88" endPos="170.88" friendlyPos="true"/>
+    <busStop id="927160899" name="Elisenbrunnen" lane="952341787#0_0" startPos="23.15" endPos="38.15" friendlyPos="true"/>
+    <busStop id="928411229" name="Barbarossaplatz" lane="411760472#1_0" startPos="41.45" endPos="56.45" friendlyPos="true"/>
+    <busStop id="930310633" name="Lennéstraße" lane="72860688#0_0" startPos="53.46" endPos="68.46" friendlyPos="true"/>
+    <busStop id="936668412" name="Karolingerstraße" lane="29246665#0_0" startPos="128.62" endPos="143.62" friendlyPos="true"/>
+    <busStop id="936668423" name="Karolingerstraße" lane="429047401#1_0" startPos="4.13" endPos="19.13" friendlyPos="true"/>
+    <busStop id="938688353" name="Rosenquelle" lane="411596077#1_0" startPos="63.98" endPos="78.98" friendlyPos="true" lines="SB 63"/>
+    <busStop id="968045935" name="Bendplatz" lane="35992700#0_0" startPos="15.36" endPos="30.36" friendlyPos="true"/>
+    <busStop id="985969652" name="Habsburgerallee" lane="244043137#0_0" startPos="40.76" endPos="55.76" friendlyPos="true"/>
+</additional>
