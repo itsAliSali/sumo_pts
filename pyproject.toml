@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[metadata]
+name = "sumo_pts"
+version = "0.0.1"
+
+[tool.setuptools.packages]
+find = {}  # Scan the project directory with the default parameters
+
+[project]
+name = "sumo_pts"
+version = "0.1"
+authors = [
+  { name="Ali", email="ali.salimian@rwth-aachen.de" },
+]
+description = "A Python interface for simulating public transport systems using SUMO."
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
