@@ -21,7 +21,7 @@ class SimulationHandler:
 
     def run(self, gui=False):
         if gui == False:
-            os.popen(f"sumo -c {self.config_path} --statistic-output test1.sta.out --netstate-dump test1.netstate.dump.out").read()
+            os.popen(f"sumo -c {self.config_path} --statistic-output test1.sta.out --netstate-dump test1.netstate.dump.out --tripinfo-output tripinfo.out").read()
         else:
             os.popen(f"sumo-gui -c {self.config_path}").read()
         print("Simulation finished.")
