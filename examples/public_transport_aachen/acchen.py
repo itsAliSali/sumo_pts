@@ -1,5 +1,9 @@
-from sumo_pts.simulation import SimulationHandler
+from sumo_pts.simulation import SimulationHandler, SimConfig
 
 
-acchen_sim = SimulationHandler("aachen.sumocfg")
+conf = SimConfig('aachen.sumocfg')
+conf.change_netfile('osm.net.xml.gz')
+conf.save('aachen.sumocfg.deleteme')
+
+acchen_sim = SimulationHandler("aachen.sumocfg.deleteme")
 acchen_sim.run(gui=True)
