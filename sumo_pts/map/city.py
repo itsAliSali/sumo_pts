@@ -52,13 +52,19 @@ class City:
     def save(self, fname):
         self.net_tree.write(fname)
 
-    def show_statistics(self):
+    def show_statistics(self, street_names=None):
         """
         Printing information about the bus trips through city streets. 
 
+        Parameters
+        ----------
+        street_names = None : list of str
+            a list containing the name of the streets to report the trips.
+        
         Returns
         -------
-        None
+        counter_edge_bus_sorted: dict
+            a dictionay mapping street names (str) to number of bus trips (int).
         """
         edge_id_name = {}
         for child1 in self.net_root:
@@ -83,9 +89,16 @@ class City:
         counter_edge_bus_sorted = {k: v for k, v in sorted(counter_edge_bus.items(), key=lambda item: -item[1])}
         total_trips = 0
         
-        print('street name \t\t\t # bus trips')
-        print('-----------        -------')
+        print('street name \t\t # bus trips')
+        print('----------- \t\t   ------------')
         for street_name in counter_edge_bus_sorted:
-            print(f'{street_name} \t\t\t {counter_edge_bus_sorted[street_name]}')
+            if street_names != None:
+                if street_name in street_names:
+                    print(f'{street_name} \t\t\t {counter_edge_bus_sorted[street_name]}')
+            else:
+                print(f'{street_name} \t\t\t {counter_edge_bus_sorted[street_name]}')
+            
             total_trips += counter_edge_bus_sorted[street_name]
-        print(f'total # trips: {total_trips}')
+        print(f'total # trips: \t\t\t {total_trips}')
+        
+        return counter_edge_bus_sorted
