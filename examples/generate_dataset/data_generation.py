@@ -13,11 +13,11 @@ stree_names = ['Pontwall', 'Seffenter Weg', 'Forckenbeckstraße', 'Halifaxstraß
                'Saarstraße', 'Boxgraben', 'Roermonder Straße', 'Hirschgraben']
 
 sampler = qmc.LatinHypercube(d=len(stree_names))
-sample = sampler.random(n=200)
+sample = sampler.random(n=10)
 
 
 for i in range(sample.shape[0]):
-    aachen = City('osm.net.xml')
+    aachen = City('osm.net.xml', 'osm_pt.rou.xml')
     for j, street in enumerate(stree_names):
         aachen.change_street_speed(street, sample[i, j])
     aachen.save(f'./data/osm_slow_{i}.net.xml')
