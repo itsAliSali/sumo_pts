@@ -1,11 +1,5 @@
 import xml.etree.ElementTree as ET
 
-# tree = ET.parse('tripinfo.out')
-# root = tree.getroot()
-
-# for c in root:
-#     if float(c.attrib['departDelay']) > 50: 
-#         print(c.attrib['id'], c.attrib['departDelay'])
 
 class City:
     """
@@ -57,3 +51,41 @@ class City:
     
     def save(self, fname):
         self.net_tree.write(fname)
+
+    def show_statistics(self):
+        """
+        Printing information about the bus trips through city streets. 
+
+        Returns
+        -------
+        None
+        """
+        edge_id_name = {}
+        for child1 in self.net_root:
+            if child1.tag == 'edge':
+                if 'name' in child1.attrib.keys():
+                    # if child1.attrib['name'] == edge_id_name:
+                    edge_id_name[child1.attrib['id']] = child1.attrib['name']
+
+        # return edge_id_name
+        counter_edge_bus = {}
+        for child1 in self.route_root:
+            if child1.tag == 'route':
+                if 'edges' in child1.attrib.keys():
+                    for edge_id in child1.attrib['edges'].split():
+                        if edge_id in edge_id_name.keys():
+                            street_name = edge_id_name[edge_id]
+                            if street_name in counter_edge_bus.keys():
+                                counter_edge_bus[street_name] += 1
+                            else:
+                                counter_edge_bus[street_name] = 1
+        
+        counter_edge_bus_sorted = {k: v for k, v in sorted(counter_edge_bus.items(), key=lambda item: -item[1])}
+        total_trips = 0
+        
+        print('street name \t\t\t # bus trips')
+        print('-----------        -------')
+        for street_name in counter_edge_bus_sorted:
+            print(f'{street_name} \t\t\t {counter_edge_bus_sorted[street_name]}')
+            total_trips += counter_edge_bus_sorted[street_name]
+        print(f'total # trips: {total_trips}')
