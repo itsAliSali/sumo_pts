@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
       description = f.read()
 
 setup(name='sumo_pts',
-      version='0.1',
+      version='0.2',
       description='A Python interface for simulating public transport systems using SUMO.',
       url='https://github.com/itsAliSali/sumo_pts',
       author='itsAliSali',

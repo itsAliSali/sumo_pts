@@ -4,14 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [metadata]
 name = "sumo_pts"
-version = "0.0.1"
+version = "0.2"
 
 [tool.setuptools.packages]
 find = {}  # Scan the project directory with the default parameters
 
 [project]
 name = "sumo_pts"
-version = "0.1"
+version = "0.2"
 authors = [
   { name="Ali", email="ali.salimian@rwth-aachen.de" },
 ]
