@@ -35,7 +35,7 @@ for i,v in enumerate(importance):
     print('Feature: %0d, Score: %.5f' % (i,v))
 
 bar = plt.bar([x for x in range(len(importance))], importance)
-
+bus_freq['Halifaxstraße'] = 14
 for i, rect in enumerate(bar):
     height = rect.get_height()
     plt.text(rect.get_x() + rect.get_width() / 2.0, height, str(bus_freq[street_names[i]]), ha='center', va='bottom')
