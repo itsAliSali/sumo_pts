@@ -43,3 +43,22 @@ for i, rect in enumerate(bar):
 plt.xticks([x for x in range(len(importance))], street_names, rotation=90)
 plt.ylabel('Regression coefficient')
 plt.show()
+
+from sklearn.ensemble import RandomForestRegressor
+
+feature_names = [f"feature {i}" for i in range(X_train.shape[1])]
+forest = RandomForestRegressor(random_state=0)
+forest.fit(X_train, y_train_s.ravel())
+
+importances = forest.feature_importances_
+std = np.std([tree.feature_importances_ for tree in forest.estimators_], axis=0)
+
+import pandas as pd
+
+forest_importances = pd.Series(importances, index=feature_names)
+
+fig, ax = plt.subplots()
+forest_importances.plot.bar(yerr=std, ax=ax)
+ax.set_title("Feature importances using MDI")
+ax.set_ylabel("Mean decrease in impurity")
+fig.tight_layout()
