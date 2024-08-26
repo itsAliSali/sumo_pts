@@ -172,8 +172,3 @@ examples/generate_dataset/osm_slow.net.xml
 examples/generate_dataset/osm_stops.add.xml
 examples/generate_dataset/osm.net.xml
 examples/generate_dataset/osm.poly.xml.gz
-examples/load_city/osm_slow.net.xml
-examples/public_transport_aachen/aachen_city.sumocfg
-examples/public_transport_aachen/osm_slow.net.xml
-examples/public_transport_aachen/osm.net.xml
-examples/public_transport_aachen/aachen.sumocfg
